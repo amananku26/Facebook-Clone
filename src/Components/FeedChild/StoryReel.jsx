@@ -16,9 +16,9 @@ function StoryReel() {
             title = "Aman Anku"    
             />
             <Story
-            image = "https://scontent.fpat2-1.fna.fbcdn.net/v/t1.0-9/p960x960/38137349_1532104026893423_8179375756187533312_o.jpg?_nc_cat=106&ccb=2&_nc_sid=e3f864&_nc_ohc=0-ECdihLNSYAX9TevEU&_nc_ht=scontent.fpat2-1.fna&tp=6&oh=066533142cdb78cb5b8ec02b196f3dcc&oe=600D6E9A"
-            proficeSrc = "https://scontent.fpat2-2.fna.fbcdn.net/v/t1.0-9/119940626_2993940910709720_4751893958588847965_o.jpg?_nc_cat=101&ccb=2&_nc_sid=09cbfe&_nc_ohc=4vC2OBFfVcIAX8hDLDR&_nc_ht=scontent.fpat2-2.fna&oh=b370fb7a0ccb121e0590bddb82b357d7&oe=600C9B66"
-            title = "Naveen Yadav"    
+            image = "https://scontent.fpat2-1.fna.fbcdn.net/v/t1.0-0/s640x640/130978219_3537636446304483_4846219136918629499_o.jpg?_nc_cat=103&ccb=2&_nc_sid=730e14&_nc_ohc=A8gvPn0jXWoAX-YNymJ&_nc_ht=scontent.fpat2-1.fna&tp=7&oh=1051b02924e517c6d999d7a5ebbce450&oe=600D4499"
+            proficeSrc="https://scontent.fpat2-1.fna.fbcdn.net/v/t1.0-9/121186005_3370453709689425_1363957582002654144_o.jpg?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_ohc=z4Ke19rS6D4AX9GyG5o&_nc_ht=scontent.fpat2-1.fna&oh=206cb26cc4aeb7e7abe6fa7bdd209ec2&oe=600F1AB4"
+            title = "Ravi Singh"    
             />
             <Story
             image = "https://scontent.fpat2-2.fna.fbcdn.net/v/t1.0-9/10610872_535817486519247_4776311901876432046_n.jpg?_nc_cat=109&ccb=2&_nc_sid=e3f864&_nc_ohc=GUH1a8YfEYQAX8Oje8J&_nc_oc=AQk9PuXm0y-SvZ_ca2KlkNnpfS05ve-LqdCGU3yJPcHpLlctwNCSRuz9bBQQWZJ2Ub-1geFGh5ApmzHQdkRV6CFm&_nc_ht=scontent.fpat2-2.fna&oh=a9e8b3e3ba728af8eda11bd89160b0ef&oe=600E56B6"

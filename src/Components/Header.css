@@ -76,8 +76,12 @@
 }
 .header__info > h4 {
   margin-left: 10px;
+  margin-right: 10px;
 }
 
-.header__right > .MuiSvgIcon-root {
+IconButton > .MuiSvgIcon-root {
    margin: 0 10px;
   }
+ .IconButton{
+   margin: 15px;
+ } 

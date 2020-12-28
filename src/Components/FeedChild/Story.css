@@ -16,7 +16,9 @@
 }
 .story__avatar {
 margin: 10px;
-border: 3px solid rgb(255, 44, 79);
+border-bottom: 3px solid transparent;
+border-image: linear-gradient(to right, red , yellow);
+border-image-slice: 1;
 }
 
 .story > h4 {

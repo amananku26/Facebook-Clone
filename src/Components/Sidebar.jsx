@@ -7,12 +7,13 @@ import ChatIcon from '@material-ui/icons/Chat';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { useSelector,useDispatch } from "react-redux"
 
 function Sidebar() {
-
+    var data = useSelector((state) => state.PostData.UserData)
     return (
         <div className="sidebar">
-            <SidebarRow src="https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4" title="Aman Anku" /> 
+            <SidebarRow src="https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4" title={data.data.displayName} /> 
             <SidebarRow Icon={LocalHospitalIcon} title="Covid-19 Information Center" />
             <SidebarRow Icon={EmojiFlagsIcon} title="Pages" />
             <SidebarRow Icon={ChatIcon} title="Friends" />

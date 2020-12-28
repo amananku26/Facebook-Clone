@@ -1,25 +1,46 @@
 import { Avatar } from '@material-ui/core'
-import React from 'react'
+import React, { useState } from 'react'
 import "./MessageSender.css"
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import VideocamIcon from '@material-ui/icons/Videocam';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
+import { useSelector, useDispatch } from "react-redux"
+import firebase from "firebase"
+import db from "../../firebase"
 
 function MessageSender() {
-
+    var data = useSelector((state) => state.PostData.UserData)
+    const [input, setInput] = useState("")
+    const [imageUrl, setImageUrl] = useState("")
     const handleSubmit = (e) => {
         e.preventDefault()
+        db.collection('posts').add({
+            message:input,
+            image:imageUrl,
+            timestamp:firebase.firestore.FieldValue.serverTimestamp(),
+            profilePic:data.data.photoURL,
+            username:data.data.displayName
+        })  
+        // reset stuffs
+        setInput("")
+        setImageUrl("")
     }
 
     return (
         <div className="messageSender">
             <div className="messageSender__top">
-                <Avatar />
+                <Avatar src={data.data.photoURL} />
                 <form >
                     <input
+                        value={input}
+                        onChange={(e) => setInput(e.target.value)}
                         className="messageSender__input"
-                        placeholder="Whats on Your Mind Aman Anku" />
-                    <input placeholder="Post Image (optional)" />
+                        placeholder={`Whats on Your Mind ${data.data.displayName}`} />
+                    <input
+                        value={imageUrl}
+                        onChange={(e) => setImageUrl(e.target.value)}
+                        placeholder="Post Image (optional)" />
+                    <button onClick={handleSubmit} type="submit">Hidden Button</button>
                 </form>
             </div>
             <div className="messageSender__bottom">

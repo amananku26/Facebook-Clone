@@ -11,8 +11,10 @@ import { Avatar, IconButton } from "@material-ui/core";
 import ForumIcon from "@material-ui/icons/Forum";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { useSelector,useDispatch } from "react-redux"
 
 function Header() {
+  var data = useSelector((state) => state.PostData.UserData)
   return (
     <div className="header">
       <div className="header__left">
@@ -44,13 +46,19 @@ function Header() {
       </div>
       <div className="header__right">
         <div className="header__info">
-          <Avatar />
-          <h4>Aman Anku</h4>
+          <Avatar src={data.data.photoURL} />
+          <h4>{data.data.displayName}</h4>
         </div>
         <IconButton>
           <AddIcon />
+        </IconButton>
+        <IconButton>
           <ForumIcon />
+        </IconButton>
+        <IconButton>
           <NotificationsActiveIcon />
+        </IconButton>
+        <IconButton>
           <ExpandMoreIcon />
         </IconButton>
       </div>
