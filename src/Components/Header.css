@@ -1,87 +1,94 @@
 .header {
-  display: flex;
-  padding: 15px 20px;
-  justify-content: space-between;
-  position: sticky;
-  background-color: white;
-  z-index: 100;
-  top: 0;
-  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    z-index: 100;
+    top: 0;
+    box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
 }
 .header__left {
-  display: flex;
-  justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
 .header__input {
-  display: flex;
-  align-items: center;
-  background-color: aliceblue;
-  padding: 10px;
-  margin-left: 10px;
-  border-radius: 33px;
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 33px;
 }
 .header__input > input {
-  border: none;
-  background-color: transparent;
-  outline-width: 0;
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
 }
 .header__left > img {
-  height: 40px;
+    height: 40px;
 }
 
 .header__middle {
-  display: flex;
-  flex: 1;
-  justify-content: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
 }
 
 .header__option > .MuiSvgIcon-root {
-  color: grey;
+    color: grey;
 }
 
 .header__option:hover > .MuiSvgIcon-root {
-  color: #2e82f4;
+    color: #2e82f4;
 }
 
 .header__option__active > .MuiSvgIcon-root {
-  color: #2e82f4;
+    color: #2e82f4;
 }
 
 .header__option__active {
-  border-bottom: 4px solid #2e82f4;
+    border-bottom: 4px solid #2e82f4;
 }
 
 .header__option {
-  display: flex;
-  align-items: center;
-  padding: 0 30px;
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    cursor: pointer;
 }
 
 .header__option:hover {
-  background-color: aliceblue;
-  border-radius: 10px;
-  align-items: center;
-  padding: 0 30px;
-  border-bottom: none;
+    background-color: aliceblue;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: none;
 }
 
 .header__right {
-  display: flex;
+    display: flex;
 }
 
 .header__info {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 .header__info > h4 {
-  margin-left: 10px;
-  margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 IconButton > .MuiSvgIcon-root {
-   margin: 0 10px;
-  }
- .IconButton{
-   margin: 15px;
- } 
+    margin: 0 10px;
+}
+.IconButton {
+    margin: 15px;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    .header {
+        display: none;
+    }
+}
