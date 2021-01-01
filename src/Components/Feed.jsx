@@ -7,13 +7,18 @@ import db from "../firebase"
 
 function Feed() {
     const [posts, setPosts] = useState([])
+    const [users, setUsers] = useState([])
+
 
     useEffect(() => {
-        db.collection('posts').orderBy('timestamp',"desc").onSnapshot((snapshot) =>
+        db.collection('posts').orderBy('timestamp', "desc").onSnapshot((snapshot) =>
             setPosts(snapshot.docs.map(doc => ({ id: doc.id, data: doc.data() }))));
+        db.collection('users').onSnapshot((snapshot) =>
+        setUsers(snapshot.docs.map(doc => ({ id: doc.id, data: doc.data() }))));
 
     }, [])
-    console.log("snapshots", posts)
+    // console.log("posts", posts)
+    // console.log("users", users)
     return (
         <div className="feed">
             <StoryReel />

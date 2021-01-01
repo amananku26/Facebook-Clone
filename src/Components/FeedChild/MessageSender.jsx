@@ -19,7 +19,10 @@ function MessageSender() {
             image:imageUrl,
             timestamp:firebase.firestore.FieldValue.serverTimestamp(),
             profilePic:data.data.photoURL,
-            username:data.data.displayName
+            username:data.data.displayName,
+            email:data.data.email,
+            likes:[],
+            comments:[]
         })  
         // reset stuffs
         setInput("")
