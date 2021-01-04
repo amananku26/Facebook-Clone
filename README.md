@@ -23,7 +23,8 @@
   
 ### Let You Walk through the UI 
 ###### Login page
-![Login Page](https://github.com/amananku26/Facebook-Clone/blob/main/assets/123.jpg)
+![Login Page](https://github.com/amananku26/Facebook-Clone/blob/main/assets/loginfb.jpg)
 ###### Home Page/ Dashboard
 ![Home Page](https://github.com/amananku26/Facebook-Clone/blob/main/assets/123.jpg)
 ###### Post
+![Post Page](https://github.com/amananku26/Facebook-Clone/blob/main/assets/POSTFB.jpg)
