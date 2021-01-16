@@ -11,6 +11,7 @@
    * implementing firebase for login
    * Learn how to retrive and post data in to cloud firestore
    * Learn some good CSS trics to align items
+   * Learn to handle components in more better way
 
 * Steps to use the app
   * First Login with google account
