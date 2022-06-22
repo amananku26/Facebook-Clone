@@ -1,4 +1,5 @@
 import {SET_USER} from "./ActionTypes"
+import axios from "axios";
 
 
 export const setUserApi = (payload) => ({type: SET_USER, payload});
